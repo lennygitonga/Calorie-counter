@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff8f4;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    color: #3d2b1f;
+}
+
+/* Single card wrapping everything */
+.container {
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    padding: 36px;
+    box-shadow: 0 4px 24px rgba(230, 100, 20, 0.08);
+    border: 1px solid #ffe0cc;
+    height: fit-content;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #e65c00;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #a0522d;
+    margin-bottom: 6px;
+    margin-top: 16px;
+}
+
+input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #ffd5b8;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    color: #3d2b1f;
+    background: #fff8f4;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input:focus {
+    border-color: #e65c00;
+    background: white;
+}
+
+/* Buttons */
+button[type="submit"] {
+    width: 100%;
+    margin-top: 20px;
+    padding: 11px;
+    background: #e65c00;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button[type="submit"]:hover {
+    background: #cc5200;
+}
+
+/* Divider */
+hr {
+    border: none;
+    border-top: 1px solid #ffe0cc;
+    margin: 24px 0;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #e65c00;
+    margin-bottom: 14px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.88rem;
+}
+
+th {
+    text-align: left;
+    padding: 8px 10px;
+    color: #a0522d;
+    font-weight: 500;
+    border-bottom: 1px solid #ffe0cc;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #fff0e6;
+    color: #3d2b1f;
+}
+
+/* Remove button */
+td button {
+    background: none;
+    border: 1px solid #ffd5b8;
+    color: #e65c00;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.78rem;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: background 0.2s;
+}
+
+td button:hover {
+    background: #fff0e6;
+}
+
+/* Total */
+#totalCalories {
+    margin-top: 16px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #e65c00;
+    text-align: right;
+}
+
+/* Reset button */
+#resetButton {
+    margin-top: 16px;
+    width: 100%;
+    padding: 10px;
+    background: white;
+    border: 1px solid #ffd5b8;
+    color: #e65c00;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.88rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#resetButton:hover {
+    background: #fff0e6;
+}

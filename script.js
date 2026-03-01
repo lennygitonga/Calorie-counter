@@ -1,3 +1,4 @@
+//variables to access DOM elements and store data
 const form = document.querySelector('form')
 const foodInput = document.getElementById('food')
 const caloriesInput = document.getElementById('calories')
@@ -7,6 +8,7 @@ const resetButton = document.getElementById('resetButton')
 let total = 0
 let foods = []
 
+// Load saved foods from localStorage on page load
     window.onload = function () {
         let savedFoods = localStorage.getItem('foods')
 
@@ -28,6 +30,7 @@ let foods = []
         }
     }
 
+// Event listener for form submission to add food and calories
 form.addEventListener('submit', function (event) {
     event.preventDefault()
     let food = foodInput.value
@@ -51,8 +54,7 @@ form.addEventListener('submit', function (event) {
     localStorage.setItem('foods', JSON.stringify(foods))
 })
 
-    
-
+// Function to remove a food item and update total calories
 function removeFood(button) {
     let calories = button.closest('tr').cells[1].textContent
     total -= Number(calories)
@@ -60,11 +62,11 @@ function removeFood(button) {
     button.closest('tr').remove()
 }
 
+// Event listener for reset button to clear all data and localStorage
 resetButton.addEventListener('click', function () {
     foods = []
     foodList.innerHTML = ''
     total = 0
     totalCalories.textContent = `Total Calories: ${total}`
     localStorage.removeItem('foods')
-
 })
