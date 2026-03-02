@@ -2,6 +2,8 @@
 
 A simple web app to track your daily calorie intake.
 
+By: Lenny Muriithi.
+
 ## Features
 - Add food items with their calorie count
 - Remove individual food items
@@ -29,4 +31,4 @@ calorie-counter/
 - localStorage
 
 ## Live Demo
-[Live link]( https://lennygitonga.github.io/Calorie-counter/)
+Visit the [Live link]( https://lennygitonga.github.io/Calorie-counter/)
