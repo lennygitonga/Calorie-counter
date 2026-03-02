@@ -31,4 +31,4 @@ calorie-counter/
 - localStorage
 
 ## Live Demo
-Visit the [Live link]( https://lennygitonga.github.io/Calorie-counter/)
+Visit the [Live link](https://lennygitonga.github.io/Calorie-counter/)
