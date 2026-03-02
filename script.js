@@ -23,7 +23,7 @@ let foods = []
                     <td><button onclick="removeFood(this)">Remove</button></td>
                 </tr>
             `
-                total += item.calories
+                total += Number(item.calories)
             })
 
             totalCalories.textContent = `Total Calories: ${total}`

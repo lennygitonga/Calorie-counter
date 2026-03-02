@@ -9,13 +9,13 @@
 </head>
 
 <body>
-    <div>
+    <div class="container">
         <form>
             <div>
                 <h1>Calorie Counter</h1>
-                <label for="">Type of Food</label>
+                <label for="food">Type of Food</label>
                 <input type="text" name="food" id="food">
-                <label for="">Calories</label>
+                <label for="calories">Calories</label>
                 <input type="number" name="calories" id="calories" required>
                 <button type="submit">Add Food</button>
             </div>
@@ -29,7 +29,7 @@
                 </tr>
             </thead>
             <tbody id="foodList">
-                <!-- Food items will be added here -->
+
             </tbody>
         </table>
         <p id="totalCalories">Total Calories: 0</p>
